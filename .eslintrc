@@ -1,0 +1,12 @@
+{
+  "extends": [ "wesbos/typescript" ],
+  "rules":{
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
+  }
+}
