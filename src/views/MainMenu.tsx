@@ -1,11 +1,9 @@
 import * as React from 'react'
 
-export default function MainMenu() {
-  const [menuChoice, setMenuChoice] = React.useState<number>(0)
-
+export default function MainMenu({ handleMenuChoice }: any) {
   function handleOnClick(e: any): void {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
-    setMenuChoice(e.currentTarget.id)
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    handleMenuChoice(e)
   }
 
   return (
