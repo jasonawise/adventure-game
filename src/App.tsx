@@ -1,4 +1,5 @@
 import React from 'react'
+import CreateCharacter from './components/CreateCharacter'
 import MainMenu from './views/MainMenu'
 import ScreenWrapper from './views/ScreenWrapper'
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <ScreenWrapper>
         <MainMenu />
+        <CreateCharacter />
       </ScreenWrapper>
     </div>
   )
