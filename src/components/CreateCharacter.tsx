@@ -1,8 +1,7 @@
 import * as React from 'react'
-import { races } from '../content/races'
+import { races } from '../content/races/races'
 
 export default function CreateCharacter(): JSX.Element {
-  console.log('here')
   const [selectedRaceId, setSelectedRaceId] = React.useState<number>(0)
 
   const handleSelect = (e: any) => {
@@ -12,7 +11,7 @@ export default function CreateCharacter(): JSX.Element {
 
   return (
     <div>
-      <h2>Create Character</h2>
+      <h1 className="text-lg font-bold">Create Character</h1>
 
       <label htmlFor="characters">Select your race: </label>
       <select

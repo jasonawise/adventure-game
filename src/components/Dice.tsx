@@ -10,7 +10,7 @@ export default function Dice(numberOfSides: number): JSX.Element {
 
   return (
     <div>
-      <p>Your roled: ${numberRolled}</p>
+      <p>You rolled: ${numberRolled}</p>
     </div>
   )
 }
