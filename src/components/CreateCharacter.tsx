@@ -21,7 +21,7 @@ export default function CreateCharacter(): JSX.Element {
         value={selectedRaceId}
         onChange={handleSelect}
       >
-        <option value={0}>Select</option>
+        <option value={0}>Select Race</option>
         {races.map((race) => (
           <option value={race.id}>{race.name}</option>
         ))}
