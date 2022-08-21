@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MainMenu({ handleMenuChoice }: any) {
   function handleOnClick(e: any): void {
@@ -9,9 +10,7 @@ export default function MainMenu({ handleMenuChoice }: any) {
   return (
     <div>
       <h1 className="text-lg font-bold">Main Menu</h1>
-      <button type="button" id="1" onClick={handleOnClick}>
-        1. Create Character
-      </button>
+      <Link to="/create-character">1. Create Character</Link>
     </div>
   )
 }
