@@ -2,6 +2,7 @@ import * as React from 'react'
 import { races } from '../content/races'
 
 export default function CreateCharacter(): JSX.Element {
+  console.log('here')
   const [selectedRaceId, setSelectedRaceId] = React.useState<number>(0)
 
   const handleSelect = (e: any) => {

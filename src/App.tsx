@@ -6,6 +6,11 @@ import ScreenWrapper from './views/ScreenWrapper'
 
 function App() {
   const [menuChoice, setMenuChoice] = React.useState<number>(0)
+  const [displayView, setDisplayView] = React.useState<number>(0)
+
+  React.useEffect(() => {
+    if (menuChoice) return setDisplayView(menuChoice)
+  }, [menuChoice])
 
   function onMenuChoice(e: {
     currentTarget: { id: React.SetStateAction<number> }
@@ -15,8 +20,11 @@ function App() {
   return (
     <div className="App">
       <ScreenWrapper>
-        <MainMenu handleMenuChoice={onMenuChoice} />
-        <CreateCharacter />
+        {displayView === 1 ? (
+          <CreateCharacter />
+        ) : (
+          <MainMenu handleMenuChoice={onMenuChoice} />
+        )}
       </ScreenWrapper>
     </div>
   )
