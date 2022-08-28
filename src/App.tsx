@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-no-bind */
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import CreateCharacter from './components/CreateCharacter'
-import MainMenu from './views/MainMenu'
-import ScreenWrapper from './views/ScreenWrapper'
+import { Route, Routes } from "react-router-dom";
+import CreateCharacter from "./components/CreateCharacter";
+import MainMenu from "./views/MainMenu";
+import ScreenWrapper from "./views/ScreenWrapper";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         </Routes>
       </ScreenWrapper>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
